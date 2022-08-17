@@ -6,7 +6,7 @@ import {
   ImageLayer,
   RightWrapper,
 } from "./styles";
-import { researchData } from "../../Data/researchData";
+import { researchData } from "../../data/researchData";
 import { CustomLink, ShopNowButton, Subtitle } from "../../tools/globalStyles";
 
 const Research = () => {
