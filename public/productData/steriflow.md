@@ -1,1 +1,1 @@
-# product object for steriFlow™ mask
+# product object for SteriFlow™ mask

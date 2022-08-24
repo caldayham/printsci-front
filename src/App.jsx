@@ -32,8 +32,8 @@ import ScrollToTop from "./tools/ScrollToTop";
 import { useSelector } from "react-redux";
 
 const App = () => {
-const user = useSelector((state) => state.user.currentUser);
-
+  const user = useSelector((state) => state.user.currentUser);
+  
   return (
     <Router style={{ position: "relative" }}>
       <Announcement />
