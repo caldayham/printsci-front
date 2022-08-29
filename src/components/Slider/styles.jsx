@@ -54,8 +54,10 @@ const Slide = styled.div`
   background-color: rgb(231, 241, 255);
 `;
 const ImgContainer = styled.div`
-  height: 100%;
+  height: 150%;
   flex: 1;
+  margin-left: 80px;
+  padding-top: 180px;
 `;
 
 const Image = styled.img`
@@ -63,8 +65,9 @@ const Image = styled.img`
 `;
 
 const InfoContainer = styled.div`
-  flex: 1;
+  flex: 1.5;
   padding: 50px;
+  margin-right: 80px;
 `;
 
 const Title = styled.h1`
