@@ -2,7 +2,7 @@ export const sliderItems = [
   {
     id: 1,
     img: "tflow-cfd-1.png",
-    title: ["Extensible design,", "fairly priced."],
+    title: ["Extensible design,", "built to solve."],
     desc: "Don't compremise on the equipment your researchers use most.",
     bg: "f5fafd",
   },
