@@ -38,7 +38,7 @@ const Slider = () => {
             <ImgContainer>
               <Image src={`${process.env.REACT_APP_IMGURL + item.img}`} />
             </ImgContainer>
-            <InfoContainer>
+            <InfoContainer>  
               <Title>
                 {item.title[0]}
                 <br />
