@@ -17,7 +17,7 @@ export const sliderItems = [
     id: 2,
     img: "SLA_SteriFlow_assembly_img2.PNG",
     title: ["Custom order?", "No problemo."],
-    desc: "All stereotaxic anesthesia masks are 20% off!",
+    desc: "We build custom parts and assemblies fast and dependably.",
     bg: "fcf1ed",
   },
 ];
