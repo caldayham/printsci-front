@@ -3,11 +3,11 @@ export const members = [
     id: 1,
     img: "memberImgs/CalDayHam1.png",
     title: "Cal Day Ham",
-    position: "COO",
-    loves: "efficiency & family",
+    position: "Director of Operations",
+    loves: "efficiency & active people",
     hates: "procrastination & pessimism",
     strength: "willingness to step out of comfort and work there",
-    weakness: "complacency & ego",
+    weakness: "complacency",
     catchPhrase: "'Epic!'",
     socials: [
       {
@@ -80,7 +80,7 @@ export const members = [
     id: 2,
     img: "memberImgs/LouisJaeckle1.jpg",
     title: "Louis Jaeckle",
-    position: "CTO",
+    position: "Lead Software Engineer",
     loves: "python try-catch blocks",
     hates: "javascript try-catch blocks",
     strength: "python try-catch blocks",
