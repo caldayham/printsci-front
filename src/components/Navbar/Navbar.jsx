@@ -38,15 +38,6 @@ const Navbar = () => {
   return (
     <Container>
       <Wrapper>
-        <Left>
-          <Language>EN</Language>
-          <SearchContainer>
-            <Input />
-            <YoutubeSearchedForIcon
-              style={{ color: "rgb(40,40,40)", fontSize: 20 }}
-            />
-          </SearchContainer>
-        </Left>
         <Center>
           <ClickLogo />
           <LinkMenu

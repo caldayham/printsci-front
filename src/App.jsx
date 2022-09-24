@@ -30,6 +30,7 @@ import {
 
 import ScrollToTop from "./tools/ScrollToTop";
 import { useSelector } from "react-redux";
+import Searchbar from "./components/Searchbar/Searchbar";
 
 const App = () => {
   const user = useSelector((state) => state.user.currentUser);
@@ -38,6 +39,7 @@ const App = () => {
     <Router style={{ position: "relative" }}>
       <Announcement />
       <Navbar />
+      <Searchbar />
 
       {useSelector((state) => state.overlay.loginShowing) ? (
         <LoginRegisterOverlay />

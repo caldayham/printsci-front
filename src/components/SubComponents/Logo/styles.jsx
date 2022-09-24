@@ -3,9 +3,9 @@ import styled from "styled-components";
 const Container = styled.div``;
 
 const LogoImageBox = styled.div`
-  width: 70px;
-  height: 70px;
-  padding-right: 20px;
+  width: 48px;
+  height: 48px;
+  padding-right: 0px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,7 +19,7 @@ const LogoImage = styled.img`
 
 const LogoTitle = styled.h1`
   font-weight: bold;
-  font-size: 30px;
+  font-size: 24px;
   transition: all 0.2s ease;
   line-height: 80%;
 `;
@@ -35,7 +35,7 @@ const Logo = styled.div`
     width: 100%;
   }
   &:hover ${LogoTitle} {
-    font-size: 32px;
+    font-size: 26px;
   }
 `;
 

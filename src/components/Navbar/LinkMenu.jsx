@@ -22,10 +22,10 @@ const LinkMenu = ({ showingMobileMenu, setShowingMobileMenu }) => {
           <LocalLink thisPage={"custom"}>Custom</LocalLink>
         </CustomLink>
         <CustomLink to="/research">
-          <LocalLink thisPage={"research"}>Research</LocalLink>
+          <LocalLink thisPage={"research"}>Articles</LocalLink>
         </CustomLink>
         <CustomLink to="/about">
-          <LocalLink thisPage={"about"}>About Us</LocalLink>
+          <LocalLink thisPage={"about"}>Company</LocalLink>
         </CustomLink>
       </NavLinkBar>
       <MobileNav
