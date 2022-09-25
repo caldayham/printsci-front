@@ -13,7 +13,7 @@ import PrivacyPolicyPage from "./pages/StaticPages/PrivacyPolicyPage";
 import SuccessPage from "./pages/SuccessPage/SuccessPage";
 import AccountPage from "./pages/AccountPage/AccountPage";
 
-import Announcement from "./components/Announcement/Announcement";
+/*import Announcement from "./components/Announcement/Announcement";*/
 import Navbar from "./components/Navbar/Navbar";
 import Newsletter from "./components/Newsletter/Newsletter";
 import Footer from "./components/Footer/Footer";
@@ -31,15 +31,17 @@ import {
 import ScrollToTop from "./tools/ScrollToTop";
 import { useSelector } from "react-redux";
 import Searchbar from "./components/Searchbar/Searchbar";
+import NeoNavbar from "./components/Navbar/NeoNavbar";
 
 const App = () => {
   const user = useSelector((state) => state.user.currentUser);
   
   return (
     <Router style={{ position: "relative" }}>
-      <Announcement />
-      <Navbar />
-      <Searchbar />
+      {/*<Announcement />*/}
+      {/*<Navbar />*/}
+      {/*<Searchbar />*/}
+      <NeoNavbar />
 
       {useSelector((state) => state.overlay.loginShowing) ? (
         <LoginRegisterOverlay />

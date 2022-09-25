@@ -2,10 +2,6 @@ import React, { useState } from "react";
 import {
   Container,
   Wrapper,
-  Left,
-  Language,
-  SearchContainer,
-  Input,
   Center,
   Right,
   MenuItem,
@@ -17,7 +13,6 @@ import {
 } from "./styles.jsx";
 
 import { Badge } from "@mui/material";
-import YoutubeSearchedForIcon from "@mui/icons-material/YoutubeSearchedFor";
 import ShoppingBagOutlinedIcon from "@mui/icons-material/ShoppingBagOutlined";
 import ClickLogo from "../SubComponents/Logo/ClickLogo";
 

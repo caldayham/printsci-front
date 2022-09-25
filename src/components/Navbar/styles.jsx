@@ -20,6 +20,13 @@ const Container = styled.div`
   }
 `;
 
+const NeoWrapper = styled.div`
+    padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
 const Wrapper = styled.div`
   padding: 0px 20px;
   display: flex;
@@ -150,4 +157,5 @@ export {
   NavLinkBar,
   LocalLink,
   LocalMinorLink,
+  NeoWrapper
 };
