@@ -62,8 +62,11 @@ export const ListTextItem = styled(Link)`
     transition: all 0.2s ease;
     &:hover{
         cursor: pointer;
-        text-shadow: 0px 0px 1px white;        
+        text-shadow: 0px 0px 1px white;     
+        border-top:  oarsntrsatartnsrtrsatq rtsra t1px solid white;   
     };
+
+    border-top: ${(props) => (props.selected ? "1px solid white" : "none")};
 `;
 
 

@@ -27,7 +27,7 @@ const NeoNavbar = () => {
 
           <NavMenuSearch>
             <MenuList>
-              <ListTextItem to="/catalog">catalog</ListTextItem>
+              <ListTextItem to="/catalog" selected={true}>catalog</ListTextItem>
               <ListTextItem to="/catalog">anesthesia</ListTextItem>
               <ListTextItem to="/catalog">dental</ListTextItem>
               <ListTextItem to="/custom">custom</ListTextItem>

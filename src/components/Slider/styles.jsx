@@ -27,7 +27,6 @@ const Arrow = styled.div`
   margin: auto;
 
   cursor: pointer;
-  opacity: 0.9;
 
   z-index: 2;
 
@@ -58,11 +57,11 @@ const ImgContainer = styled.div`
   height: 150%;
   flex: 1;
   margin-left: 80px;
-  padding-top: 180px;
+  padding-top: 440px;
 `;
 
 const Image = styled.img`
-  height: 80%;
+  height: 58%;
 `;
 
 const InfoContainer = styled.div`
