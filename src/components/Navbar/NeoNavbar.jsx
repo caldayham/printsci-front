@@ -3,30 +3,56 @@ import {
   NeoNavContainer,
   NavWrapper,
   SearchWrapper,
-  SearchBox,
+  SearchBar,
   MenuList,
+  SearchBox,
+  SearchButton,
+  SearchSelect,
+  ListTextItem,
+  LogoImage,
+  CartIcon,
 } from "./neoStyles.jsx";
 
-import { useSelector } from "react-redux";
+import SearchIcon from '@mui/icons-material/Search';
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
 
 const NeoNavbar = () => {
-
-    const quantity = useSelector((state) => state.cart.quantity);
 
   return (
     <NeoNavContainer>
         <NavWrapper>
             <MenuList>
               <li>
-                <a>icon</a>
+                <a href="https://printscientfic.com" style={{maxWidth:"42px", overflow: "hidden"}}>
+                  <LogoImage src="favicon.ico" />
+                </a>
               </li>
-              <li>
-                catalog
+              <ListTextItem>catalog</ListTextItem>
+              <ListTextItem>anesthesia</ListTextItem>
+              <ListTextItem>dental</ListTextItem>
+              <ListTextItem>custom</ListTextItem>
+              <ListTextItem>hardware</ListTextItem>
+              <ListTextItem>mission</ListTextItem>
+              <ListTextItem>support</ListTextItem>
+              <ListTextItem>account</ListTextItem>
+              <li >
+                <CartIcon href="https://printscientfic.com">
+                  <ShoppingBagOutlinedIcon/>
+                </CartIcon>
               </li>
             </MenuList>
         </NavWrapper>
         <SearchWrapper>
-          <SearchBox></SearchBox>
+          <SearchBar>
+            <SearchButton>
+              <SearchIcon style={{height: "20px"}}/>
+            </SearchButton>
+            <SearchBox type="search" placeholder="/  to  make  it  happen"/>
+            <SearchSelect>
+              <ArrowBackIosIcon style={{height: "16px"}}/>
+            </SearchSelect>
+          </SearchBar>
         </SearchWrapper>
     </NeoNavContainer>
     )

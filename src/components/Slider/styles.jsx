@@ -4,7 +4,7 @@ const Container = styled.div`
   width: 100%;
   height: 86vh;
   display: flex;
-  background-color: #eeeeee;
+  background-color: rgb(0,0,0);
   position: relative;
   overflow: hidden;
   margin-bottom: 20px;
@@ -41,6 +41,7 @@ const Arrow = styled.div`
 const Wrapper = styled.div`
   height: 100%;
   display: flex;
+  padding-top: 40px;
   transition: all 0.8s ease;
   transform: translateX(${(props) => props.slideIndex * -100}vw);
 `;
@@ -51,7 +52,7 @@ const Slide = styled.div`
   display: flex;
   align-items: center;
 
-  background-color: rgb(231, 241, 255);
+  background-color: rgb(0, 0, 0);
 `;
 const ImgContainer = styled.div`
   height: 150%;
@@ -68,6 +69,7 @@ const InfoContainer = styled.div`
   flex: 1.5;
   padding: 50px;
   margin-right: 80px;
+  color: rgb(255,255,255);
 `;
 
 const Title = styled.h1`

@@ -3,6 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { changePage } from "../../../redux/currentPageRedux";
+import LogoSvg from "./LogoSvg";
 
 const ClickLogo = () => {
   const dispatch = useDispatch();
@@ -17,6 +18,7 @@ const ClickLogo = () => {
           <LogoTitle>
             Print <br /> Scientific
           </LogoTitle>
+          <LogoSvg size="32"/>
         </Logo>
       </Link>
     </Container>
