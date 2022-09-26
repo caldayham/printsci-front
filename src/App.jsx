@@ -58,14 +58,14 @@ const App = () => {
           <Route exact path="/product/:id" element={<ProductPage />} />
           <Route exact path="/custom" element={<CustomPage />} />
           <Route exact path="/research" element={<ResearchPage />} />
-          <Route exact path="/mycart" element={<CartPage />} />
+          <Route exact path="/cart" element={<CartPage />} />
           <Route exact path="/checkout" element={<CartPage />} />
           <Route exact path="/about" element={<AboutPage />} />
           <Route exact path="/about/terms" element={<ServiceTermsPage />} />
           <Route exact path="/about/privacy" element={<PrivacyPolicyPage />} />
           <Route exact path="/about/return" element={<ReturnPolicyPage />} />
           <Route exact path="/checkout/success" element={<SuccessPage />} />
-          <Route exact path="/myaccount" element={<AccountPage />} />
+          <Route exact path="/account" element={<AccountPage />} />
 
           <Route
             exact

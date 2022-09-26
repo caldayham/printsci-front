@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const NeoNavContainer = styled.div`
@@ -8,7 +9,7 @@ export const NeoNavContainer = styled.div`
     width: 100vw;
     z-index: 5;
     color: white;
-    padding-left: calc(50% - 512px);
+    padding-left: calc(50% - 430px);
 
     transition: all 0.2s ease;
     background-color: rgb(0, 0, 0, 0.95);
@@ -18,13 +19,19 @@ export const NeoNavContainer = styled.div`
 `;
 
 export const NavWrapper = styled.div`
-    padding-right:22px;
-    padding-left:22px;
-    width: 980px;
-    height: 24px;
+    padding: 0px 20px;
+    width: 820px;
+    height: 56px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+`;
+
+export const NavMenuSearch = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 620px;
 `;
 
 export const MenuList = styled.ul`
@@ -36,27 +43,22 @@ export const MenuList = styled.ul`
     list-style: none;
     font-size: 14px;
     font-weight: 100;
+    margin-top: -5px;
 `;
 
-export const LogoImage = styled.img`
-    position: relative;
-    top: 17px;
-    height: 42px;
-    &:hover{
-        height: 44px;
-        width: 28px;
-    }
-`;
-
-export const CartIcon = styled.a`
-    position: relative;
-    top: 10px;
-    height: 32px;
+export const CartIcon = styled(Link)`
+    height: 100%;
     width: 32px;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `;
  
-export const ListTextItem = styled.li`
+export const ListTextItem = styled(Link)`
+    text-decoration: none;
+    color: white;
+
     transition: all 0.2s ease;
     &:hover{
         cursor: pointer;
@@ -64,15 +66,6 @@ export const ListTextItem = styled.li`
     };
 `;
 
-export const SearchWrapper = styled.div`
-    padding-top: 2px;
-    padding-right:22px;
-    padding-left:102px;
-    width: 820px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-`;
 
 export const SearchBar = styled.div`
     border: 0.5px solid rgb(255, 255, 255);

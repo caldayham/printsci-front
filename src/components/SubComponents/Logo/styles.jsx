@@ -22,14 +22,14 @@ const LogoTitle = styled.h1`
   font-size: 18px;
   transition: all 0.2s ease;
   line-height: 100%;
-  padding-left: 4px;
+  padding-left: 8px;
 `;
 
 const Logo = styled.div`
   display: flex;
   align-items: center;
   color: white;
-  width: 250px;
+  width: 100px;
   height: 60px;
 
   &:hover ${LogoTitle} {

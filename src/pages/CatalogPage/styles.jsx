@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 const FiltersWrapper = styled.div`
   padding-bottom: 10px;
-  padding-top: 10px;
+  padding-top: 20px;
   position: sticky;
-  top: 130px;
+  top: 56px;
   background-color: rgb(255, 255, 255);
   border-bottom: 1px solid rgb(200, 200, 200);
   z-index: 4;

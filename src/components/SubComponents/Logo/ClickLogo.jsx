@@ -1,4 +1,4 @@
-import { Container, Logo, LogoImageBox, LogoImage, LogoTitle } from "./styles";
+import { Container, Logo, LogoTitle } from "./styles";
 import React from "react";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
@@ -12,13 +12,10 @@ const ClickLogo = () => {
     <Container onClick={() => dispatch(changePage("home"))}>
       <Link to={`/home/#`} style={{ textDecoration: "none", color: "white" }}>
         <Logo>
-          <LogoImageBox>
-            <LogoImage src="/favicon.ico" alt="logo" />
-          </LogoImageBox>
+        <LogoSvg size="24" strokeWidth={18}/>
           <LogoTitle>
             Print <br /> Scientific
           </LogoTitle>
-          <LogoSvg size="32"/>
         </Logo>
       </Link>
     </Container>

@@ -9,7 +9,7 @@ const CustomLink = styled(Link)`
 `;
 
 const MainContainer = styled.div`
-  margin-top: 170px;
+  margin-top: 56px;
   margin-left: 6vw;
   margin-right: 6vw;
   margin-bottom: 50px;
