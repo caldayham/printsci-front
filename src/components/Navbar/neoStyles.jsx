@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { useSelector } from "react-redux";
 
 export const NeoNavContainer = styled.div`
     display: relative;
@@ -46,7 +47,7 @@ export const MenuList = styled.ul`
     margin-top: -5px;
 `;
 
-export const CartIcon = styled(Link)`
+export const NeoNavIcon = styled(Link)`
     height: 100%;
     width: 32px;
     color: white;
@@ -63,10 +64,13 @@ export const ListTextItem = styled(Link)`
     &:hover{
         cursor: pointer;
         text-shadow: 0px 0px 1px white;     
-        border-top:  oarsntrsatartnsrtrsatq rtsra t1px solid white;   
+        border-top:  1px solid white;   
     };
 
-    border-top: ${(props) => (props.selected ? "1px solid white" : "none")};
+    border-top: ${(props) =>
+    useSelector((state) => state.currentPage.page) === props.thispage
+      ? "1px solid white"
+      : "auto"};
 `;
 
 

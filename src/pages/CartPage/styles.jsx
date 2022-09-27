@@ -14,7 +14,7 @@ const CartCheckout = styled.div`
 
 const TopTexts = styled.div`
   position: sticky;
-  top: 130px;
+  top: 56px;
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid rgb(200, 200, 200);

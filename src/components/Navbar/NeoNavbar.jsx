@@ -8,13 +8,14 @@ import {
   SearchButton,
   SearchSelect,
   ListTextItem,
-  CartIcon,
   NavMenuSearch,
+  NeoNavIcon,
 } from "./neoStyles.jsx";
 
 import SearchIcon from '@mui/icons-material/Search';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
+import ManageAccountsOutlinedIcon from '@mui/icons-material/ManageAccountsOutlined';
 import ClickLogo from "../SubComponents/Logo/ClickLogo.jsx";
 
 const NeoNavbar = () => {
@@ -27,15 +28,15 @@ const NeoNavbar = () => {
 
           <NavMenuSearch>
             <MenuList>
-              <ListTextItem to="/catalog" selected={true}>catalog</ListTextItem>
-              <ListTextItem to="/catalog">anesthesia</ListTextItem>
-              <ListTextItem to="/catalog">dental</ListTextItem>
-              <ListTextItem to="/custom">custom</ListTextItem>
-              <ListTextItem to="/catalog">hardware</ListTextItem>
-              <ListTextItem to="/research">research</ListTextItem>
-              <ListTextItem to="/about">mission</ListTextItem>
-              <ListTextItem to="/support">support</ListTextItem>
-              <ListTextItem to="/account">account</ListTextItem>
+              <ListTextItem to="/catalog" selected={true} thispage={"catalog"}>catalog</ListTextItem>
+              <ListTextItem to="/catalog/anesthesia" thispage={"anesthesia"}>anesthesia</ListTextItem>
+              <ListTextItem to="/catalog/dentistry" thispage={"dentistry"}>dentistry</ListTextItem>
+              <ListTextItem to="/catalog/hardware" thispage={"hardware"}>hardware</ListTextItem>
+              <ListTextItem to="/custom" thispage={"custom"}>custom</ListTextItem>
+              <ListTextItem to="/research" thispage={"research"}>research</ListTextItem>
+              <ListTextItem to="/about" thispage={"about"}>about</ListTextItem>
+              <ListTextItem to="/support" thispage={"support"}>support</ListTextItem>
+              <ListTextItem to="/contact" thispage={"contact"}>contact</ListTextItem>
             </MenuList>
           <SearchBar>
             <SearchButton>
@@ -48,9 +49,14 @@ const NeoNavbar = () => {
           </SearchBar>
           </NavMenuSearch>
 
-          <CartIcon to="/cart">
-            <ShoppingBagOutlinedIcon/>
-          </CartIcon>
+          <div style={{display:"flex", height: "100%", gap: "5px"}}>
+            <NeoNavIcon to="/account">
+              <ManageAccountsOutlinedIcon style={{width: "100%", height: "100%"}}/>
+            </NeoNavIcon>
+            <NeoNavIcon to="/cart">
+              <ShoppingBagOutlinedIcon style={{width: "90%", height: "90%"}}/>
+            </NeoNavIcon>
+          </div>
 
         </NavWrapper>
     </NeoNavContainer>
