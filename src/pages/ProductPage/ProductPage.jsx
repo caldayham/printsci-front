@@ -30,7 +30,7 @@ import ProductAmount from "../../components/SubComponents/ProductAmount/ProductA
 import { useLocation } from "react-router-dom";
 import { publicRequest } from "../../tools/requestMethods";
 import ProductOptions from "../../components/SubComponents/ProductOptions/ProductOptions";
-import Rating from "../../components/SubComponents/Rating/Rating";
+import StarsRating from "../../components/SubComponents/Rating/StarsRating/StarsRating";
 
 import numberWithCommas from "../../tools/stylingTools";
 
@@ -194,14 +194,14 @@ const ProductPage = () => {
                 </b>
               </Paragraph>
               {product.rating ? (
-                <Rating
+                <StarsRating
                   size={100}
                   avgRating={product.rating.totalAvgRating}
                   numRatings={product.rating.totalNumRatings}
                   numAnsweredQuestions={product.rating.totalAnsweredQuestions}
                 />
               ) : (
-                <Rating
+                <StarsRating
                   size={100}
                   avgRating={2.5}
                   numRatings={10}
