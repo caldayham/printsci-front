@@ -26,10 +26,12 @@
   },
   "scripts": {
     "start": "set PORT=3004 && react-scripts start",
+    "restart": "set PORT=3004 && set BROWSER=null && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "aws s3 sync build/ s3://printscientific.com --region us-west-1"
+    "deploy": "aws s3 sync build/ s3://printscientific.com --region us-west-1",
+    "ccache": "aws cloudfront create-invalidation --distribution-id E35WHMFUW46U3N --region us-west-1 --paths \"/*\""
   },
   "eslintConfig": {
     "extends": [
