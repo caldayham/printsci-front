@@ -54,11 +54,17 @@ export const NeoNavIcon = styled(Link)`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    &:hover{
+        stroke: rgb(255,255,255);
+        stroke-width: 0.5;
+    }
 `;
  
 export const ListTextItem = styled(Link)`
     text-decoration: none;
     color: white;
+    height: 18px;
 
     transition: all 0.2s ease;
     &:hover{

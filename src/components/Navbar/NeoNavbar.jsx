@@ -18,9 +18,12 @@ import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
 import ManageAccountsOutlinedIcon from '@mui/icons-material/ManageAccountsOutlined';
 import ClickLogo from "../SubComponents/Logo/ClickLogo.jsx";
 
-const NeoNavbar = () => {
+import { Badge } from "@mui/material";
+import { useSelector } from "react-redux";
 
+const NeoNavbar = () => {
   const searchBoxInputRef = useRef(null);
+  const quantity = useSelector((state) => state.cart.quantity);
 
   useEffect(() => {
     document.addEventListener('keydown', detectKeyDown, true)
@@ -41,10 +44,10 @@ const NeoNavbar = () => {
 
           <NavMenuSearch>
             <MenuList>
-              <ListTextItem to="/catalog" selected={true} thispage={"catalog"}>catalog</ListTextItem>
-              <ListTextItem to="/catalog/anesthesia" thispage={"anesthesia"}>anesthesia</ListTextItem>
-              <ListTextItem to="/catalog/dentistry" thispage={"dentistry"}>dentistry</ListTextItem>
-              <ListTextItem to="/catalog/hardware" thispage={"hardware"}>hardware</ListTextItem>
+              <ListTextItem to="/catalog" selected={true} thispage={"catalog-all"}>catalog</ListTextItem>
+              <ListTextItem to="/catalog/anesthesia" thispage={"catalog-anesthesia"}>anesthesia</ListTextItem>
+              <ListTextItem to="/catalog/dentistry" thispage={"catalog-dentistry"}>dentistry</ListTextItem>
+              <ListTextItem to="/catalog/hardware" thispage={"catalog-hardware"}>hardware</ListTextItem>
               <ListTextItem to="/custom" thispage={"custom"}>custom</ListTextItem>
               <ListTextItem to="/research" thispage={"research"}>research</ListTextItem>
               <ListTextItem to="/about" thispage={"about"}>about</ListTextItem>
@@ -71,7 +74,9 @@ const NeoNavbar = () => {
               <ManageAccountsOutlinedIcon style={{width: "100%", height: "100%"}}/>
             </NeoNavIcon>
             <NeoNavIcon to="/cart">
-              <ShoppingBagOutlinedIcon style={{width: "90%", height: "90%"}}/>
+              <Badge badgeContent={quantity} color="primary">
+                <ShoppingBagOutlinedIcon style={{width: "30px", height: "30px"}}/>
+              </Badge>
             </NeoNavIcon>
           </div>
 

@@ -51,7 +51,7 @@ const CatalogPage = () => {
           ? location.pathname.split("/")[2]
           : "all"
       );
-      dispatch(changePage("catalog"));
+      dispatch(changePage(`catalog-${category}`));
     };
     getCategory();
   });
