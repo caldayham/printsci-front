@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useRef} from "react";
 import {
   NeoNavContainer,
   NavWrapper,
@@ -19,6 +19,19 @@ import ManageAccountsOutlinedIcon from '@mui/icons-material/ManageAccountsOutlin
 import ClickLogo from "../SubComponents/Logo/ClickLogo.jsx";
 
 const NeoNavbar = () => {
+
+  const searchBoxInputRef = useRef(null);
+
+  useEffect(() => {
+    document.addEventListener('keydown', detectKeyDown, true)
+  },[])
+
+  const detectKeyDown = (e) => {
+    if(e.key === "/") { 
+      e.preventDefault()
+      searchBoxInputRef.current.focus();
+    }
+  }
 
   return (
     <NeoNavContainer>
@@ -42,7 +55,11 @@ const NeoNavbar = () => {
             <SearchButton>
               <SearchIcon style={{height: "20px"}}/>
             </SearchButton>
-            <SearchBox type="search" placeholder="/  to  make  it  happen"/>
+            <SearchBox 
+              type="search" 
+              placeholder="/  to  make  it  happen" 
+              ref={searchBoxInputRef}
+            />
             <SearchSelect>
               <ArrowBackIosIcon style={{height: "16px"}}/>
             </SearchSelect>

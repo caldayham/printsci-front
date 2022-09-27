@@ -6,10 +6,11 @@ const CustomLink = styled(Link)`
   text-decoration: none;
   display: flex;
   align-items: center;
-`;
+`; 
 
 const MainContainer = styled.div`
   margin-top: 56px;
+  padding-top: 20px;
   margin-left: 6vw;
   margin-right: 6vw;
   margin-bottom: 50px;
