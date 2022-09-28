@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 const Container = styled.div`
   width: 100%;
-  height: 86vh;
   display: flex;
   background-color: rgb(0,0,0);
   position: relative;
@@ -38,9 +37,7 @@ const Arrow = styled.div`
 `;
 
 const Wrapper = styled.div`
-  height: 100%;
   display: flex;
-  padding-top: 40px;
   transition: all 0.8s ease;
   transform: translateX(${(props) => props.slideIndex * -100}vw);
 `;
@@ -50,22 +47,27 @@ const Slide = styled.div`
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 
   background-color: rgb(0, 0, 0);
+  padding-bottom: 40px;
 `;
 const ImgContainer = styled.div`
-  height: 150%;
-  flex: 1;
+  flex: 2;
+  max-width: 800px;
+  min-width: 600px;
   margin-left: 80px;
-  padding-top: 440px;
 `;
 
 const Image = styled.img`
-  height: 58%;
+  width: 100%;
 `;
 
 const InfoContainer = styled.div`
-  flex: 1.5;
+  flex: 1;
+  max-width: 500px;
+  min-width: 400px;
   padding: 50px;
   margin-right: 80px;
   color: rgb(255,255,255);
