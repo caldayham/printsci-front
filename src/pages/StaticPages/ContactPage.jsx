@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
 import { useDispatch } from 'react-redux';
+import ContactForm from '../../components/Forms/ContactForm';
 import { changePage } from '../../redux/currentPageRedux';
 import {MainContainer} from "../../tools/globalStyles";
-import { ContactFormWrapper } from './contactPageStyles';
 
 const ContactPage = () => {
     const dispatch = useDispatch();
@@ -15,9 +15,7 @@ const ContactPage = () => {
 
   return (
     <MainContainer flexDirection="column">
-        <ContactFormWrapper>
-            Contact Form!
-        </ContactFormWrapper>
+        <ContactForm/>
     </MainContainer>
   )
 }

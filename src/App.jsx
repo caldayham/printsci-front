@@ -32,8 +32,7 @@ import {
 
 import ScrollToTop from "./tools/ScrollToTop";
 import { useSelector } from "react-redux";
-import SupportPage from "./pages/StaticPages/SupportPage";
-import ContactPage from "./pages/ContactPage/ContactPage";
+import ContactPage from "./pages/StaticPages/ContactPage";
 
 const App = () => {
   const user = useSelector((state) => state.user.currentUser);
@@ -63,7 +62,6 @@ const App = () => {
           <Route exact path="/cart" element={<CartPage />} />
           <Route exact path="/checkout" element={<CartPage />} />
           <Route exact path="/about" element={<AboutPage />} />
-          <Route exact path="/support" element={<SupportPage />} />
           <Route exact path="/contact" element={<ContactPage />} />
           <Route exact path="/about/terms" element={<ServiceTermsPage />} />
           <Route exact path="/about/privacy" element={<PrivacyPolicyPage />} />

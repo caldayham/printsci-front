@@ -27,12 +27,12 @@ const CustomPage = () => {
 
   return (
     <MainContainer flexDirection={"column"}>
-      <Title>Custom Parts</Title>
+      <Title>Custom Orders</Title>
       <Subtitle>
         <i style={{ fontSize: "20px" }}>
           'Print Scientific began as a custom part delivery service for research
           labs. We have seen the environment, we have seen the use cases, we
-          know the process.'
+          know why things work and why things don't.'
         </i>{" "}
         <br />{" "}
         <b style={{ fontSize: "22px" }}>

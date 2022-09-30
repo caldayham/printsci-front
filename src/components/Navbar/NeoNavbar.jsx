@@ -48,10 +48,9 @@ const NeoNavbar = () => {
               <ListTextItem to="/catalog/anesthesia" thispage={"catalog-anesthesia"}>anesthesia</ListTextItem>
               <ListTextItem to="/catalog/dentistry" thispage={"catalog-dentistry"}>dentistry</ListTextItem>
               <ListTextItem to="/catalog/hardware" thispage={"catalog-hardware"}>hardware</ListTextItem>
-              <ListTextItem to="/custom" thispage={"custom"}>custom</ListTextItem>
+              <ListTextItem to="/custom" thispage={"custom"}>custom orders</ListTextItem>
               <ListTextItem to="/research" thispage={"research"}>research</ListTextItem>
               <ListTextItem to="/about" thispage={"about"}>about</ListTextItem>
-              <ListTextItem to="/support" thispage={"support"}>support</ListTextItem>
               <ListTextItem to="/contact" thispage={"contact"}>contact</ListTextItem>
             </MenuList>
           <SearchBar>
