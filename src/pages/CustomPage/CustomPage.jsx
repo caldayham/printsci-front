@@ -32,7 +32,7 @@ const CustomPage = () => {
         <i style={{ fontSize: "20px" }}>
           'Print Scientific began as a custom part delivery service for research
           labs. We have seen the environment, we have seen the use cases, we
-          know why things work and why things don't.'
+          know why things work and why.'
         </i>{" "}
         <br />{" "}
         <b style={{ fontSize: "22px" }}>

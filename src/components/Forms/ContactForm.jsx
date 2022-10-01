@@ -1,4 +1,5 @@
 import React from 'react'
+import FormInput from "./formStyles.js"
 
 const ContactForm = () => {
   return (
@@ -7,11 +8,7 @@ const ContactForm = () => {
         <h2>Contact Form</h2>
         <span>Full Name</span>
         <br />
-        <input
-          type="text"
-          name="Name"
-          required
-        />
+        <FormInput/>
         <br />
         <span>Organization</span>
         <br />

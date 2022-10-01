@@ -2,7 +2,10 @@ import React, { useEffect } from 'react'
 import { useDispatch } from 'react-redux';
 import ContactForm from '../../components/Forms/ContactForm';
 import { changePage } from '../../redux/currentPageRedux';
-import {MainContainer} from "../../tools/globalStyles";
+import {
+  MainContainer,
+  Title,
+} from "../../tools/globalStyles";
 
 const ContactPage = () => {
     const dispatch = useDispatch();
@@ -15,6 +18,7 @@ const ContactPage = () => {
 
   return (
     <MainContainer flexDirection="column">
+      <Title>Contact Print Sci</Title>
         <ContactForm/>
     </MainContainer>
   )
